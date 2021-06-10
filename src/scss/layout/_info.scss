@@ -1,0 +1,30 @@
+.info{
+     padding: $separacion 0;
+     
+    @include telefono{
+        @include grid(1,$separacion);
+    }
+
+     @include tablet{
+        @include grid(2,$separacion);
+     }
+
+}
+
+.info__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    h2{
+        font-size: 3rem;
+    }
+    .fecha{
+        color: $rosa;
+        font-weight: $bold;
+    }
+    .texto{
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+}
